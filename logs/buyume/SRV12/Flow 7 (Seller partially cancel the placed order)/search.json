@@ -1,0 +1,280 @@
+{
+    "context": {
+        "domain": "ONDC:SRV11",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "on_search",
+        "version": "2.0.0",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "487adbcf-0ba4-45a5-a3b4-380a9b89999b",
+        "message_id": "0e68bfd0-0232-42ab-9969-b76599fb27f4",
+        "timestamp": "2025-06-30T07:18:42.140Z",
+        "ttl": "PT30S",
+        "bpp_uri": "https://prelive.buyume.io/ondc/services",
+        "bpp_id": "prelive.buyume.io"
+    },
+    "message": {
+        "catalog": {
+            "fulfillments": [
+                {
+                    "id": "1",
+                    "type": "Home-Service"
+                },
+                {
+                    "id": "2",
+                    "type": "Store-Service"
+                }
+            ],
+            "payments": [
+                {
+                    "id": "1",
+                    "type": "PRE-FULFILLMENT"
+                },
+                {
+                    "id": "2",
+                    "type": "ON-FULFILLMENT"
+                },
+                {
+                    "id": "3",
+                    "type": "POST-FULFILLMENT"
+                }
+            ],
+            "descriptor": {
+                "name": "Buyume",
+                "short_desc": "Online eCommerce Store.",
+                "long_desc": "Online eCommerce Store.",
+                "images": [
+                    {
+                        "url": "https://buyume.io/Home/buyume_logo.png"
+                    }
+                ]
+            },
+            "providers": [
+                {
+                    "id": "6704fc94c06b74a241ab5983",
+                    "descriptor": {
+                        "name": "Buyume",
+                        "code": "P001",
+                        "short_desc": "Buyume",
+                        "long_desc": " Buyume",
+                        "images": [
+                            {
+                                "url": "https://buyumecrm.s3-ap-south-1.amazonaws.com/developer-uploads/r33bUvd3xPFrdrVuxXYe31.png"
+                            }
+                        ]
+                    },
+                    "time": {
+                        "label": "validity",
+                        "range": {
+                            "start": "2025-06-27T09:30:00.000Z",
+                            "end": "2025-10-30T21:30:00.000Z"
+                        },
+                        "days": "1,2,4,5",
+                        "schedule": {
+                            "holidays": [
+                                "2025-04-15T00:00:00.000Z"
+                            ],
+                            "frequency": "PT2H"
+                        }
+                    },
+                    "locations": [
+                        {
+                            "id": "6704fc94c06b74a241ab5984",
+                            "gps": "28.553778466542614,77.26974365492589",
+                            "address": "Okhla phase 3 near modi meal",
+                            "city": {
+                                "code": "std:080",
+                                "name": "New Delhi"
+                            },
+                            "state": {
+                                "code": "KA"
+                            },
+                            "country": {
+                                "code": "IND"
+                            },
+                            "area_code": "110020",
+                            "circle": {
+                                "gps": "28.553778466542614,77.26974365492589",
+                                "radius": {
+                                    "unit": "km",
+                                    "value": "40"
+                                }
+                            }
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "serviceability"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "location"
+                                    },
+                                    "value": "6704fc94c06b74a241ab5984"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "category"
+                                    },
+                                    "value": "SRV11-*"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "type"
+                                    },
+                                    "value": "13"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "val"
+                                    },
+                                    "value": "{\"type\": \"FeatureCollection\", \"features\": [{\"type\": \"Feature\", \"properties\": {}, \"geometry\": {\"coordinates\": [[[77.175571, 28.675927], [77.128737, 28.600972], [77.446934, 28.545325], [77.175571, 28.675927]]], \"type\": \"Polygon\"}}]}"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "unit"
+                                    },
+                                    "value": "geojson"
+                                }
+                            ]
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "65f965517fee4592f8577a87",
+                            "parent_item_id": "",
+                            "descriptor": {
+                                "name": "Upper Lips",
+                                "code": "CUSTOM : 65f965517fee4592f8577a87",
+                                "short_desc": "Upper Lips",
+                                "long_desc": "Upper Lips",
+                                "images": [
+                                    {
+                                        "url": "http://res.cloudinary.com/dyqcevdpm/image/upload/v1623516821/buyume%20services/Threading/Upper_Lips.jpg"
+                                    }
+                                ]
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "minimum_value": "100"
+                            },
+                            "category_ids": [
+                                "SRV11-*"
+                            ],
+                            "fulfillment_ids": [
+                                "1"
+                            ],
+                            "location_ids": [
+                                "6704fc94c06b74a241ab5984"
+                            ],
+                            "payment_ids": [
+                                "1"
+                            ],
+                            "cancellation_terms": [
+                                {
+                                    "fulfillment_state": {
+                                        "descriptor": {
+                                            "code": "Pending"
+                                        }
+                                    },
+                                    "cancellation_fee": {
+                                        "amount": {
+                                            "value": "0"
+                                        }
+                                    },
+                                    "reason_required": true
+                                },
+                                {
+                                    "fulfillment_state": {
+                                        "descriptor": {
+                                            "code": "In-Transit"
+                                        }
+                                    },
+                                    "cancellation_fee": {
+                                        "percentage": "0"
+                                    },
+                                    "reason_required": true
+                                },
+                                {
+                                    "fulfillment_state": {
+                                        "descriptor": {
+                                            "code": "At-Location"
+                                        }
+                                    },
+                                    "cancellation_fee": {
+                                        "percentage": "0"
+                                    },
+                                    "reason_required": true
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "reschedule_terms"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "fulfillment_state"
+                                            },
+                                            "value": "Pending"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "reschedule_eligible"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "reschedule_fee"
+                                            },
+                                            "value": "0.00"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "reschedule_within"
+                                            },
+                                            "value": "P1D"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "time": {
+                                "label": "validity",
+                                "range": {
+                                    "start": "2025-06-27T09:30:00.000Z",
+                                    "end": "2025-10-30T21:30:00.000Z"
+                                },
+                                "schedule": {
+                                    "frequency": "PT2H",
+                                    "holidays": [],
+                                    "times": []
+                                }
+                            },
+                            "matched": true,
+                            "recommended": true
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "contact": {
+                                "phone": "8826345311",
+                                "email": "tech@buyume.com"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
